@@ -6,7 +6,10 @@
 <title>Uber Partner Support</title>
 <link rel="icon" type="image/ico" href="/images/favicon.ico">
 <script type="text/javascript"> 
-function showMe (it, hide1, hide2, hide3, hide4, hide5, hide6, hide7, hide8, hide9, hide10, hide11, hide12, hide13, hide14, hide15, hide16, hide17, hide18, hide19, hide20, hide21, hide22, hide23, hide24, hide25, hide26, hide27, hide28, hide29, hide30, hide31, hide32, hide33, hide34, hide35, hide36, hide37, hide38, hide39, hide40, hide41, hide42, hide43, hide44, hide45, hide46, hide47, box) { 
+
+
+<!-- add another hide element here, and then also add a document.getElementById(hideX).style.display = "none"; line where X is the actual element-->
+function showMe (it, hide1, hide2, hide3, hide4, hide5, hide6, hide7, hide8, hide9, hide10, hide11, hide12, hide13, hide14, hide15, hide16, hide17, hide18, hide19, hide20, hide21, hide22, hide23, hide24, hide25, hide26, hide27, hide28, hide29, hide30, hide31, hide32, hide33, hide34, hide35, hide36, hide37, hide38, hide39, hide40, hide41, hide42, hide43, hide44, hide45, hide46, hide47, hide48, box) { 
 document.getElementById(it).style.display = "block"; 
 document.getElementById(hide1).style.display = "none"; 
 document.getElementById(hide2).style.display = "none"; 
@@ -30,7 +33,7 @@ document.getElementById(hide19).style.display = "none";
 document.getElementById(hide20).style.display = "none"; 
 document.getElementById(hide21).style.display = "none"; 
 document.getElementById(hide22).style.display = "none";
-document.getElementById(hide23).style.display = "none";  
+document.getElementById(hide23).style.display = "none"; 
 document.getElementById(hide24).style.display = "none";  
 document.getElementById(hide25).style.display = "none"; 
 document.getElementById(hide26).style.display = "none";
@@ -54,7 +57,8 @@ document.getElementById(hide43).style.display = "none";
 document.getElementById(hide44).style.display = "none";  
 document.getElementById(hide45).style.display = "none";
 document.getElementById(hide46).style.display = "none"; 
-document.getElementById(hide47).style.display = "none"; 
+document.getElementById(hide47).style.display = "none";
+document.getElementById(hide48).style.display = "none";  
 } 
 function showMe2 (it) { 
 var vis = document.getElementById(it).style.display;
@@ -112,7 +116,7 @@ text-align: left;
 <div>
 	<br />
 	<br />
-<p>To help us solve your issue as quickly as possible, please answer three questions so our San Francisco team can learn more about what you need!</p>
+<p>To help us solve your issue as quickly as possible, please answer three questions so our team can learn more about what you need!</p>
 </div>
 
 <!--TROUBLESHOOTER STRUCTURE-->
@@ -369,10 +373,10 @@ Other
 <p><strong>What is your concern about your rating?</strong></p>
 <p>
 <input type="radio" name="radio1" onclick="showMe('lowrating', 'highrating', this)" /> 
-My rating is below a 4.7, and I would like some helpful feedback
+I believe my rating is low, and I would like some helpful feedback.
 <br />
 <input type="radio" name="radio1" onclick="showMe('highrating', 'lowrating', this)" />
-My rating is above 4.7, and I want to make sure it doesn't drop
+I believe my rating is high, and I want to make sure it stays high.
 </p>
 <hr>
 </div>
@@ -452,7 +456,7 @@ Other
 	<!--Account Status-->
 	
 	<div class="divstyle" id="accountstatus">
-	<p>If you want to know the status of your account, let us know:</p>
+	<p>Thanks for applying to be a partner with Uber! Please note that the full background check process can take up to two weeks. If you are waiting on your phone to be shipped, it can take up to five business days. In the meantime, if you haven’t done so already please upload all required documents at <a href="https://partners.uber.com" target="_blank">https://partners.uber.com</a>, then watch the <a href="http://video.uber.com/Y7qi/uber-driver-training-complete-course" target="_blank">onboarding video</a>. If you want to know the status of your account, let us know by filling out the form below (use the same information that you used to apply with Uber):</p>
 	<iframe height="804" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://sfdops.wufoo.com/embed/z1bawhtk0pzrt90/def/&header=hide"></iframe>
 	</div>
 	<!--Eligible Car-->
@@ -472,12 +476,12 @@ Other
 	</div>
 	<!--Application Question-->
 	<div class="divstyle" id="applicationquestion">
-	<p>Have a question about your application? Contact us:</p>
+	<p>Have a question about your application? If you haven't applied yet, go to <a href="https://partners.uber.com/signup/" target="_blank">https://partners.uber.com/signup/</a> to apply. If you have applied already, contact us here:</p>
 	<iframe height="804" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://sfdops.wufoo.com/embed/z1bawhtk0pzrt90/def/&header=hide"></iframe>
 	</div>
 	<!--Forgot Login-->
 	<div class="divstyle" id="forgotlogin">
-	<p>If you have forgotten your password, please go to this page to reset it: <a href="https://partners.uber.com/forgot-password/" target="_blank">https://partners.uber.com/forgot-password/</a>.</p>
+	<p>Your username is most likely the email address that you used to apply with Uber. If you have forgotten your password, please go to this page to reset it: <a href="https://partners.uber.com/forgot-password/" target="_blank">https://partners.uber.com/forgot-password/</a>.</p>
 	</div>
 	<!--Stop Email-->
 	<div class="divstyle" id="stopemail">
@@ -512,7 +516,7 @@ I'm done driving with Uber and would like to return my phone
 	</div>
 	<!--Return Phone-->
 	<div class="divstyle" id="returnphone">
-	<p>We're sorry to hear you are no longer interested in driving with Uber. Please return your phone via mail or the dropbox to 301 Vermont Street, San Francisco, California 94103.</p>
+	<p>We're sorry to hear you are no longer interested in driving with Uber. Please go to t.uber.com/westcoastreturns, fill out and print the form and send it back along with your phone to 301 Vermont St, San Francisco, CA 94103. Thank you!</p>
 	</div>
 
 <!--Add BLACK-->
